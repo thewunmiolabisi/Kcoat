@@ -70,7 +70,6 @@
   -moz-appearance: none;
   appearance: none;
   background-color: #EEE7FA;
-
 }
 
 .saveButton {
@@ -85,16 +84,77 @@
   float: right;
 }
 
-/* Responsive design  */
-@media (max-width: 768px) {
+/* Responsive design */
 
-  .inputRow,
-  .selectRow {
-    flex-direction: column;
+/* 720px */
+@media (max-width: 720px) {
+  .container {
+    margin: 8% auto;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .container {
+    margin: 10% auto;
+    padding: 10px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .backArrow {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+
+  .title {
+    font-size: 20px;
   }
 
   .inputHalf,
-  .selectHalf {
-    width: 100%;
+  .selectHalf,
+  .inputFull,
+  .textarea {
+    padding: 12px;
+  }
+
+  .saveButton {
+    padding: 0.8rem;
+    margin-top: 12px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .container {
+    margin: 12% auto;
+    padding: 8px;
+  }
+
+  .header {
+    margin-bottom: 16px;
+  }
+
+  .backArrow {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .inputHalf,
+  .selectHalf,
+  .inputFull,
+  .textarea {
+    padding: 8px;
+  }
+
+  .saveButton {
+    padding: 0.6rem;
+    margin-top: 10px;
   }
 }

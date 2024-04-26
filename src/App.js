@@ -18,9 +18,11 @@ import Order from "./components/ProfileRequirement/Order";
 import General from "./components/ProfileRequirement/General";
 import Payment from "./pages/Payment";
 import Register from "./pages/Register";
+import DetailsForm from "./pages/DetailsForm";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminOrders from "./components/Admin page/Admin_orders/AdminOrders";
 import WishList from "./pages/WishList";
+import SavedAddress from "./components/ProfileRequirement/SavedAddress";
 import ProductInventory from "./components/Admin page/Product inventory/ProductInventory";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -61,12 +63,14 @@ function App() {
           <Route path="/admincustomerpage" element={<AdminCustomer />} />
           <Route path="/account" element={<Account />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/Detailsform" element={<DetailsForm />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/profile" element={<ProfileDetails />} />
           <Route path="/UserProfile" element={<UserProfile />} />
           <Route path="/Order" element={<Order />} />
           <Route path="/Address" element={<Address />} />
           <Route path="/General" element={<General />} />
+          <Route path="/SavedAddress" element={<SavedAddress />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>

@@ -1,0 +1,151 @@
+.container {
+  background-color: #f7f7fc;
+  padding: 2rem;
+  max-width: 768px;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.heading {
+  color: #000;
+  margin: 0;
+}
+
+.imageUploadContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.uploadBtn {
+  background-color: #9856DA;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subheading {
+  color: #000;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputPair {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.inputHalf {
+  flex: 1;
+}
+
+.label {
+  display: block;
+  margin: 1rem;
+  color: #000;
+  width: 100%;
+  height: 20%;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  align-items: center;
+}
+
+.submit {
+  background-color: #9856DA;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    max-width: 600px;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .uploadBtn {
+    font-size: 0.8rem;
+  }
+
+  .inputHalf {
+    flex: 0 0 50%;
+  }
+
+  .submit {
+    width: 100%;
+  }
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.5rem;
+    max-width: 320px;
+  }
+
+  .heading {
+    font-size: 1.2rem;
+  }
+
+  .uploadBtn {
+    font-size: 0.7rem;
+  }
+
+  .inputHalf {
+    flex: 1;
+  }
+}
+
+/* Media Queries for 320px */
+@media (max-width: 320px) {
+  .container {
+    padding: 0.5rem;
+    max-width: 280px;
+  }
+
+  .heading {
+    font-size: 1rem;
+  }
+
+  .uploadBtn {
+    font-size: 0.6rem;
+  }
+
+  .inputHalf {
+    flex: 1;
+  }
+}
