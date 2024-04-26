@@ -118,6 +118,7 @@ const AddAddress = () => {
       </div>
       <NewsLetter />
       <Footer />
+      <Footer />
     </div>
   );
 };
